@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ONLY_RED 936</title>
+<meta name="description" content="Official website of ONLY_RED 936." />
+<style>
+:root{
+  --card:#0b1220;
+  --accent:#ff1e1e;
+  --muted:#94a3b8;
+  --radius:14px;
+  --maxw:1100px;
+  --ff: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Background gradient animation */
+body {
+  height: 100%;
+  margin:0;
+  font-family:var(--ff);
+  background: linear-gradient(270deg,#0f1724,#071022,#0f1724);
+  background-size: 600% 600%;
+  animation: gradientBG 20s ease infinite;
+  color:#e6eef8;
+}
+@keyframes gradientBG {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+*{box-sizing:border-box}
+a{text-decoration:none;}
+.wrap{max-width:var(--maxw);margin:36px auto;padding:28px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo img{width:52px;height:52px;border-radius:10px;object-fit:cover}
+nav{display:flex;gap:12px}
+nav a{padding:8px 12px;border-radius:10px;color:var(--muted);font-weight:600}
+nav a:hover{background:rgba(255,255,255,0.03);color:#fff}
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:28px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.title{font-size:clamp(28px,4.5vw,44px);line-height:1.02;margin:0}
+.lead{color:var(--muted);margin-top:12px}
+.cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:10px 14px;border-radius:10px;font-weight:700;border:0;cursor:pointer;display:inline-block;text-align:center;transition:all 0.3s ease;}
+.btn.primary{background:#ff1e1e;color:#fff; box-shadow: 0 0 8px #ff1e1e;}
+.btn.primary:hover{background:#ff3b3b; transform:scale(1.05); box-shadow:0 0 20px #ff3b3b,0 0 40px #ff3b3b;}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.animated-feature{
+  padding:14px;
+  background:rgba(255,255,255,0.02);
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
+  cursor:pointer;
+  color:#fff;
+  text-align:center;
+  animation: glow 2s infinite alternate;
+}
+.animated-feature:hover{
+  transform:scale(1.05);
+  border:1px solid #ff1e1e;
+  box-shadow:0 0 20px #ff1e1e, 0 0 40px #ff1e1e,0 0 60px #ff1e1e;
+}
+@keyframes glow {
+  0%{box-shadow:0 0 5px #ff1e1e;}
+  100%{box-shadow:0 0 20px #ff3b3b;}
+}
+.preview{height:320px;border-radius:12px;background:linear-gradient(180deg,#07152a,#051021);display:flex;flex-direction:column;justify-content:center;align-items:center;overflow:hidden}
+.preview img{max-width:90%;max-height:90%;border-radius:12px;object-fit:contain}
+section{margin-top:36px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.project{
+  padding:12px;
+  border-radius:10px;
+  background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
+  cursor:pointer;
+}
+.project:hover{
+  transform:scale(1.03);
+  border:1px solid #ff1e1e;
+  box-shadow:0 8px 24px rgba(255,30,30,0.4);
+  background:rgba(255,255,255,0.05);
+}
+.project strong{display:block;margin-bottom:6px;font-size:16px;}
+.project .muted{color:#94a3b8;font-size:14px;}
+footer{margin-top:48px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
+.muted{color:var(--muted)}
+input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.contact-links{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+
+/* Female Fix GIF Box */
+.female-fix-box{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  margin-top:24px;
+  padding:30px;
+}
+.female-fix-box img{
+  width:450px;
+  height:450px;
+  border-radius:12px;
+  object-fit:cover;
+}
+.female-fix-box strong{
+  font-size:28px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo"><img src="https://media.giphy.com/media/A2VD3O3OBIrwvJASL2/giphy.gif" alt="ONLY_RED 936 Logo"></div>
+      <div>
+        <div style="font-weight:800">ONLY_RED 936</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Buy Now</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="card">
+        <h1 class="title">Welcome to ONLY_RED 936</h1>
+        <p class="lead">Enjoy our services & select your products.</p>
+        <div class="cta">
+          <button class="btn primary" onclick="scrollToSection('contact')">Contact Me</button>
+          <button class="btn primary" onclick="scrollToSection('work')">Buy Now</button>
+          <a class="btn primary" href="https://discord.gg/gmaHHKWBdk" target="_blank" rel="noopener">Developed By : GYAN</a>
+        </div>
+        <div class="features" style="margin-top:20px">
+          <div class="animated-feature">
+            <strong>Unique Panel</strong>
+            <div class="muted">Different from other</div>
+          </div>
+          <div class="animated-feature">
+            <strong>Mobile Control</strong>
+            <div class="muted">You can control our panel by your phone.</div>
+          </div>
+          <div class="animated-feature">
+            <strong>Strong</strong>
+            <div class="muted">Highly Bold and Powerful</div>
+          </div>
+        </div>
+      </div>
+      <div class="preview card">
+        <img src="https://media.giphy.com/media/A2VD3O3OBIrwvJASL2/giphy.gif" alt="ONLY_RED 936 Branding">
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p class="muted">Welcome to ONLY_RED 936. Introducing, ONE OF THE MOST SAFEST PC PANEL COMMUNITY. We provide free & paid panels safe & instant.</p>
+    </section>
+
+    <section id="services">
+      <h2 style="margin-bottom:12px">Services</h2>
+      <div class="projects">
+        <div class="project"><strong>PREMIUM PANEL</strong><div class="muted">All Server 100% Safe (Hide During Live Stream)</div></div>
+        <div class="project"><strong>STREAMER PANEL</strong><div class="muted">Full Hidden From PC Checkers</div></div>
+        <div class="project"><strong>AIMKILL</strong><div class="muted">Best Panel For CS Rank Push</div></div>
+        <div class="project"><strong>BRUTAL PANEL</strong><div class="muted">Advanced Panel With All Functions</div></div>
+        <div class="project"><strong>UID EMULATOR BYPASS</strong><div class="muted">Remove PC Logo Play With Phone Players</div></div>
+        <div class="project"><strong>HOW WILL YOU GET THESE PANELS ?</strong><div class="muted">Create Ticket In Discord Server</div></div>
+      </div>
+    </section>
+
+    <section id="work" class="card">
+      <h2>BUY NOW</h2>
+      <div class="projects" style="margin-top:12px">
+        <div class="project">
+          <strong>WANT TO BUY ANY PANEL ?</strong>
+          <div class="muted" style="margin-top:8px">
+            <a class="btn primary" href="https://discord.com/channels/1345308188379185183/1345315851452022787" target="_blank" rel="noopener">Click Here</a>
+          </div>
+        </div>
+        <div class="project">
+          <strong>WANT ANY HELP & SUPPORT</strong>
+          <div class="muted" style="margin-top:8px">
+            <a class="btn primary" href="https://discord.com/channels/1345308188379185183/1345315851452022787" target="_blank" rel="noopener">Click Here</a>
+          </div>
+        </div>
+        <div class="project">
+          <strong>THANK YOU FOR CHOOSING US</strong>
+          <div class="muted" style="margin-top:8px">❤️</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="female-fix-box card">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWswMTlmNXUybHloNWpmNThyNjI5NTUwNzQ5Z2o0MDd2cDgzYzFrbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jy9e9y9bp4FNd9YvNI/giphy.gif" alt="Female Fix GIF">
+      <strong>Female Fix</strong>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p class="muted">Join the official ONLY_RED 936 community below:</p>
+      <div class="contact-links">
+        <a href="https://discord.gg/onlyred936" target="_blank" class="btn primary">Join Discord</a>
+        <a href="https://youtube.com/@onlyred936?si=XCTHhTZeVJHc9VwU" target="_blank" class="btn primary" style="background:#ff0000">YouTube Channel</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> ONLY_RED 936 — Built with ❤️
+  </footer>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+function scrollToSection(id){const el=document.getElementById(id);if(el) el.scrollIntoView({behavior:'smooth',block:'start'});}
+</script>
+</body>
+</html>
